@@ -1,0 +1,24 @@
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<iframe id="myiframe" src="javascript:;" width="100%" height="100%" frameborder="0">
+</iframe>
+<script>
+	$(document).ready(function() {
+		var total = 3;
+		var number = 1 + Math.floor(Math.random() * total);
+		var src = '2048/index.html';
+		switch(number) {
+			case 1:
+				src = '2048/index.html';
+				break;
+			case 2:
+				src = 'clumsy-bird/index.html';
+				break;
+			case 3:
+				src = 'Maze2/maze.html';
+				break;
+			default:
+				src = 'Maze2/maze.html';
+		}
+    	$('#myiframe').attr('src', src);
+	});
+</script>
